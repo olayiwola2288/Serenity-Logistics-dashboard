@@ -1,5 +1,6 @@
 import { Sidebar } from "flowbite-react";
 import { useState } from "react";
+import img1 from "../../public/logo-removebg-preview.png";
 import {
   HiArrowSmRight,
   HiChartPie,
@@ -30,13 +31,17 @@ const Maine = () => {
           <div className=" bg-green-800 h-full overflow-y-auto overflow-x-hidden rounded px-3 py-4">
             <Sidebar.Items className="">
               <Sidebar.ItemGroup className=" ">
+                <img src={img1} alt="" />
                 <Sidebar.Item
                   href="#"
                   className=" text-white hover:text-green-700"
                 >
                   <div className=" flex gap-5">
-                    <p className=" text-3xl"> <HiChartPie /></p>
-                    <p >Dashboard </p>
+                    <p className=" text-3xl">
+                      {" "}
+                      <HiChartPie />
+                    </p>
+                    <p>Dashboard </p>
                   </div>
                 </Sidebar.Item>
                 <Sidebar.Item
@@ -44,8 +49,10 @@ const Maine = () => {
                   className=" text-white hover:text-green-700"
                 >
                   <div className=" flex gap-5">
-                     <p className=" text-3xl"><HiInbox /></p>
-                    <p > Inbox </p>
+                    <p className=" text-3xl">
+                      <HiInbox />
+                    </p>
+                    <p> Inbox </p>
                   </div>
                 </Sidebar.Item>
                 <Sidebar.Item
@@ -53,8 +60,10 @@ const Maine = () => {
                   className="text-white hover:text-green-700"
                 >
                   <div className=" flex gap-5">
-                    <p className=" text-3xl"><HiUser /></p>
-                    <p > Users </p>
+                    <p className=" text-3xl">
+                      <HiUser />
+                    </p>
+                    <p> Users </p>
                   </div>
                 </Sidebar.Item>
                 <Sidebar.Item
@@ -62,8 +71,10 @@ const Maine = () => {
                   className="text-white hover:text-green-700"
                 >
                   <div className=" flex gap-5 ">
-                   <p className=" text-3xl"><HiShoppingBag /></p>
-                    <p > Products </p>
+                    <p className=" text-3xl">
+                      <HiShoppingBag />
+                    </p>
+                    <p> Products </p>
                   </div>
                 </Sidebar.Item>
                 <Sidebar.Item
@@ -71,8 +82,10 @@ const Maine = () => {
                   className="text-white hover:text-green-700"
                 >
                   <div className=" flex gap-5">
-                    <p className=" text-3xl"><HiArrowSmRight /></p>
-                    <p > Sign In </p>
+                    <p className=" text-3xl">
+                      <HiArrowSmRight />
+                    </p>
+                    <p> Sign In </p>
                   </div>
                 </Sidebar.Item>
                 <Sidebar.Item
@@ -80,17 +93,19 @@ const Maine = () => {
                   className="text-white hover:text-green-700"
                 >
                   <div className=" flex gap-5">
-                    <p className=" text-3xl"><HiTable /></p>
+                    <p className=" text-3xl">
+                      <HiTable />
+                    </p>
                     <p> Sign Up </p>
                   </div>
                 </Sidebar.Item>
                 <Sidebar.Item
-                  href="/"
+                  href="https://logistic-azure.vercel.app/"
                   className="text-green-900 hover:text-green-700 text-center mt-11 bg-gray-50"
                 >
                   <div className=" flex gap-5 ">
                     <HiOutlineArrowNarrowRight />
-                    <p > Logout </p>
+                    <p> Logout </p>
                   </div>
                 </Sidebar.Item>
               </Sidebar.ItemGroup>
