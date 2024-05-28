@@ -13,7 +13,7 @@ import {
 import { FiAlignJustify } from "react-icons/fi";
 
 const Maine = () => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   const handleToggle = () => {
     setVisible(!visible);
