@@ -10,7 +10,7 @@ import {
   HiUser,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
-import { TiTimesOutline } from "react-icons/ti";
+import { FiAlignJustify } from "react-icons/fi";
 
 const Maine = () => {
   const [visible, setVisible] = useState(true);
@@ -20,18 +20,21 @@ const Maine = () => {
   };
   return (
     <div>
-      <button
-        onClick={handleToggle}
-        className=" text-green-700 hover:text-green-600 mt-4 fixed right-[150px] lg:right-[1145px]"
-      >
-        <TiTimesOutline />
-      </button>
+      <div className="flex justify-between px-8 py-2 bg-green-800 lg:bg-white lg:py-0 lg:px-0">
+        <img src={img1} alt="" className=" w-[20%] lg:hidden" />
+        <button
+          onClick={handleToggle}
+          className=" text-white hover:text-green-600  lg:hidden"
+        >
+          <FiAlignJustify />
+        </button>
+      </div>
       {visible && (
         <Sidebar className=" sidebar h-screen w-64">
           <div className=" bg-green-800 h-full overflow-y-auto overflow-x-hidden rounded px-3 py-4">
             <Sidebar.Items className="">
               <Sidebar.ItemGroup className=" ">
-                <img src={img1} alt="" />
+                <img src={img1} alt="" className=" hidden lg:block" />
                 <Sidebar.Item
                   href="#"
                   className=" text-white hover:text-green-700"
