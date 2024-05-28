@@ -1,5 +1,5 @@
 import { Sidebar } from "flowbite-react";
-import { useState } from "react";
+import { useState,useEffect  } from "react";
 import img1 from "../../public/logo-removebg-preview.png";
 import {
   HiArrowSmRight,
@@ -13,11 +13,36 @@ import {
 import { FiAlignJustify } from "react-icons/fi";
 
 const Maine = () => {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth < 1024) {
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+
+    const handleResize = () => {
+      const newScreenWidth = window.innerWidth;
+      if (newScreenWidth < 1024) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleToggle = () => {
     setVisible(!visible);
   };
+
   return (
     <div>
       <div className="flex justify-between px-8 py-2 bg-green-800 lg:bg-white lg:py-0 lg:px-0">
