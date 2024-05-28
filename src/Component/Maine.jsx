@@ -51,7 +51,7 @@ const Maine = () => {
           onClick={handleToggle}
           className=" text-white hover:text-green-600  lg:hidden"
         >
-          <FiAlignJustify />
+          <FiAlignJustify className=" text-2xl"/>
         </button>
       </div>
       {visible && (
