@@ -1,16 +1,13 @@
 import { Sidebar } from "flowbite-react";
-import { useState,useEffect  } from "react";
+import { useState, useEffect } from "react";
 import img1 from "../../public/logo-removebg-preview.png";
-import {
-  HiArrowSmRight,
-  HiChartPie,
-  HiInbox,
-  HiShoppingBag,
-  HiTable,
-  HiUser,
-  HiOutlineArrowNarrowRight,
-} from "react-icons/hi";
+import { HiChartPie, HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { FiAlignJustify } from "react-icons/fi";
+import { ImUserPlus, ImUser } from "react-icons/im";
+import { FaWallet } from "react-icons/fa";
+import { ImBubble2 } from "react-icons/im";
+import { CgMediaLive } from "react-icons/cg";
+import { CiDeliveryTruck } from "react-icons/ci";
 
 const Maine = () => {
   const [visible, setVisible] = useState(true);
@@ -51,7 +48,7 @@ const Maine = () => {
           onClick={handleToggle}
           className=" text-white hover:text-green-600  lg:hidden"
         >
-          <FiAlignJustify className=" text-2xl"/>
+          <FiAlignJustify className=" text-2xl" />
         </button>
       </div>
       {visible && (
@@ -64,69 +61,73 @@ const Maine = () => {
                   href="#"
                   className=" text-white hover:text-green-700"
                 >
-                  <div className=" flex gap-5">
+                  <div className=" flex gap-5 my-4">
                     <p className=" text-3xl">
                       {" "}
-                      <HiChartPie />
+                      <CiDeliveryTruck />
                     </p>
-                    <p>Dashboard </p>
+                    <p> Order </p>
                   </div>
                 </Sidebar.Item>
+
                 <Sidebar.Item
                   href="#"
                   className=" text-white hover:text-green-700"
                 >
-                  <div className=" flex gap-5">
-                    <p className=" text-3xl">
-                      <HiInbox />
+                  <div className=" flex gap-5 my-4">
+                    <p className=" text-2xl">
+                      <ImBubble2 />
                     </p>
-                    <p> Inbox </p>
+                    <p> Chat </p>
+                  </div>
+                </Sidebar.Item>
+
+                <Sidebar.Item
+                  href="#"
+                  className="text-white hover:text-green-700"
+                >
+                  <div className=" flex gap-5 my-4">
+                    <p className=" text-2xl">
+                      <CgMediaLive />
+                    </p>
+                    <p>Pricing </p>
                   </div>
                 </Sidebar.Item>
                 <Sidebar.Item
                   href="#"
                   className="text-white hover:text-green-700"
                 >
-                  <div className=" flex gap-5">
-                    <p className=" text-3xl">
-                      <HiUser />
+                  <div className=" flex gap-5 my-4 ">
+                    <p className=" text-2xl">
+                      <FaWallet />
                     </p>
-                    <p> Users </p>
+                    <p> Wallet </p>
                   </div>
                 </Sidebar.Item>
                 <Sidebar.Item
                   href="#"
                   className="text-white hover:text-green-700"
                 >
-                  <div className=" flex gap-5 ">
-                    <p className=" text-3xl">
-                      <HiShoppingBag />
+                  <div className=" flex gap-5 my-4">
+                    <p className=" text-2xl">
+                      <ImUserPlus />
                     </p>
-                    <p> Products </p>
+                    <p> Referral </p>
                   </div>
                 </Sidebar.Item>
+
                 <Sidebar.Item
                   href="#"
                   className="text-white hover:text-green-700"
                 >
-                  <div className=" flex gap-5">
-                    <p className=" text-3xl">
-                      <HiArrowSmRight />
+                  <div className=" flex gap-5 my-4">
+                    <p className=" text-2xl">
+                      <ImUser />
                     </p>
-                    <p> Sign In </p>
+                    <p> Profile</p>
                   </div>
                 </Sidebar.Item>
-                <Sidebar.Item
-                  href="#"
-                  className="text-white hover:text-green-700"
-                >
-                  <div className=" flex gap-5">
-                    <p className=" text-3xl">
-                      <HiTable />
-                    </p>
-                    <p> Sign Up </p>
-                  </div>
-                </Sidebar.Item>
+
                 <Sidebar.Item
                   href="https://logistic-azure.vercel.app/"
                   className="text-green-900 hover:text-green-700 text-center mt-11 bg-gray-50"
