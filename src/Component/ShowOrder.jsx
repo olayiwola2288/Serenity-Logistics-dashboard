@@ -7,7 +7,7 @@ const ShowOrder = () => {
 
   return (
     <div className=" mt-10">
-      <div className=" flex justify-end">
+      <div className=" flex justify-end me-4">
       <Button onClick={() => setOpenModal(true)}>Make Order</Button>
       </div>
       <Modal
