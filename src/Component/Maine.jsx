@@ -1,13 +1,14 @@
 import { Sidebar } from "flowbite-react";
 import { useState, useEffect } from "react";
 import img1 from "../../public/logo-removebg-preview.png";
-import { HiChartPie, HiOutlineArrowNarrowRight } from "react-icons/hi";
+import {  HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { FiAlignJustify } from "react-icons/fi";
 import { ImUserPlus, ImUser } from "react-icons/im";
 import { FaWallet } from "react-icons/fa";
 import { ImBubble2 } from "react-icons/im";
 import { CgMediaLive } from "react-icons/cg";
 import { CiDeliveryTruck } from "react-icons/ci";
+import Card from "../Component/Card";
 
 const Maine = () => {
   const [visible, setVisible] = useState(true);
@@ -41,7 +42,7 @@ const Maine = () => {
   };
 
   return (
-    <div>
+    <div className=" lg:flex">
       <div className="flex justify-between px-8 py-2 bg-green-800 lg:bg-white lg:py-0 lg:px-0">
         <img src={img1} alt="" className=" w-[20%] lg:hidden" />
         <button
@@ -142,6 +143,7 @@ const Maine = () => {
           </div>
         </Sidebar>
       )}
+      <Card />
     </div>
   );
 };
