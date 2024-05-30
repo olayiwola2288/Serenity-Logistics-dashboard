@@ -17,7 +17,7 @@ const Card = () => {
             <p className=" text-sm">Completed Order</p>
         </div>
     </div>
-    <ShowOrder/>
+    <ShowOrder />
     </div>
   )
 };

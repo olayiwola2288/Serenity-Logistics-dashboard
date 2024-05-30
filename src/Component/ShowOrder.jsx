@@ -2,12 +2,14 @@ import { Button, Checkbox, Label, Modal, TextInput } from "flowbite-react";
 import { useRef, useState } from "react";
 
 const ShowOrder = () => {
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
   const emailInputRef = useRef < HTMLInputElement > null;
 
   return (
-    <div>
-      <Button onClick={() => setOpenModal(true)}>Toggle modal</Button>
+    <div className=" mt-10">
+      <div className=" flex justify-end">
+      <Button onClick={() => setOpenModal(true)}>Make Order</Button>
+      </div>
       <Modal
         show={openModal}
         size="md"
