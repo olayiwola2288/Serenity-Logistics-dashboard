@@ -8,7 +8,12 @@ const ShowOrder = () => {
   return (
     <div className=" mt-10">
       <div className=" flex justify-end me-4">
-        <Button onClick={() => setOpenModal(true)}>Make Order</Button>
+        <Button
+          onClick={() => setOpenModal(true)}
+          className=" bg-green-800 hover:bg-red-800"
+        >
+          Make Order
+        </Button>
       </div>
       <Modal
         show={openModal}
@@ -100,18 +105,11 @@ const ShowOrder = () => {
                 <label htmlFor="Truck"> Truck </label>
               </div>
             </div>
-
-            <div className="w-full">
-              <Button>Log in to your account</Button>
+            <div className=" flex justify-end">
+              <Button className=" bg-green-800 ">Add </Button>
             </div>
-            <div className="flex justify-between text-sm font-medium text-gray-500 dark:text-gray-300">
-              Not registered?&nbsp;
-              <a
-                href="#"
-                className="text-cyan-700 hover:underline dark:text-cyan-500"
-              >
-                Create account
-              </a>
+            <div className=" flex justify-center">
+              <Button className=" bg-green-800 py-1 px-6">Preview </Button>
             </div>
           </div>
         </Modal.Body>
