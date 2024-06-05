@@ -67,7 +67,7 @@ const ShowOrder = () => {
               />
             </div>
 
-            <div>
+            <div className=" flex gap-4 justify-center">
               <div>
                 <input
                   type="radio"
